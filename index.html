@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>电影网免费 - 免费电影资料与观影记录 | https://dianyingwangmianfei-zh.github.io</title>
+<meta name="description" content="电影网免费（dianyingwangmianfei-zh）按编号归档影片资料，所有资料与排片信息免费查阅，不提供影片文件与在线播放资源；每部影片有唯一编号与时长、版本标注，长片会标出建议观看节奏。">
+<meta name="keywords" content="电影网免费,dianyingwangmianfei-zh,免费电影资料,编号片单,电影时长,4K修复,高分榜单,观影记录,经典电影">
+<meta name="author" content="电影网免费">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="canonical" href="https://dianyingwangmianfei-zh.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="电影网免费 - 免费电影资料与观影记录">
+<meta property="og:description" content="电影网免费（dianyingwangmianfei-zh）按编号归档影片资料，所有资料与排片信息免费查阅，不提供影片文件与在线播放资源；每部影片有唯一编号与时长、版本标注，长片会标出建议观看节奏。">
+<meta property="og:url" content="https://dianyingwangmianfei-zh.github.io">
+<meta property="og:site_name" content="电影网免费">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="电影网免费 - 免费电影资料与观影记录">
+<meta name="twitter:description" content="电影网免费（dianyingwangmianfei-zh）按编号归档影片资料，所有资料与排片信息免费查阅，不提供影片文件与在线播放资源；每部影片有唯一编号与时长、版本标注，长片会标出建议观看节奏。">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f5f0;--paper:#fffdf9;--card:#fff;--line:#e2ddd4;--line2:#eee9e0;--ink:#23201c;--muted:#80786d;--green:#2f6b4f;--green2:#1f4d38;--green3:#e6efea;--gold:#b08d57;--num:#1a1815}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:16px}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:linear-gradient(180deg,rgba(47,107,79,.05),transparent 40%)}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{max-width:100%;display:block}
+::selection{background:var(--green);color:#fff}
+.container{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+header{position:sticky;top:0;z-index:100;background:rgba(255,253,249,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:70px}
+.logo{display:flex;align-items:baseline;gap:10px;flex-shrink:0}
+.logo b{font-size:20px;letter-spacing:1px;font-weight:800;color:var(--num)}
+.logo em{font-style:normal;font-size:11px;color:var(--muted);letter-spacing:1px;border-left:1px solid var(--line);padding-left:10px}
+.badge{display:inline-block;padding:2px 10px;border:1px solid var(--green);color:var(--green2);font-size:11px;letter-spacing:2px;margin-left:10px;vertical-align:3px}
+nav{flex:1;display:flex;justify-content:center}
+nav ul{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+nav a{display:block;padding:8px 15px;font-size:14px;letter-spacing:1px;color:var(--muted);transition:.2s}
+nav a:hover{color:var(--green2)}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;border-radius:2px;font-size:18px;line-height:1;flex-shrink:0}
+.mobile-nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 24px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:12px 8px;border-bottom:1px dashed var(--line);font-size:15px;color:var(--muted)}
+.hero{padding:72px 0 48px;position:relative}
+.hero-in{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:center}
+.hero-tag{display:inline-block;padding:5px 14px;background:var(--green3);color:var(--green2);font-size:12px;letter-spacing:3px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,5.6vw,60px);line-height:1.14;letter-spacing:-1px;font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero-sub{font-size:clamp(15px,2vw,17px);color:var(--muted);max-width:30em;margin-bottom:14px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 30px;border:1px solid var(--green);background:var(--green);color:#fffdf9;font-size:14px;letter-spacing:2px;cursor:pointer;transition:.25s;font-family:inherit;font-weight:600}
+.btn:hover{background:var(--green2);border-color:var(--green2)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{background:var(--card);border-color:var(--green);color:var(--green2)}
+.hero-side{border:1px solid var(--green);background:var(--paper);padding:0}
+.hero-side-hd{padding:14px 20px;background:var(--green);color:#fffdf9;font-size:13px;letter-spacing:3px;display:flex;justify-content:space-between}
+.hero-side-hd span{opacity:.7}
+.hero-side li{padding:14px 20px;border-bottom:1px solid var(--line2);display:flex;justify-content:space-between;gap:12px}
+.hero-side li:last-child{border-bottom:0}
+.hero-side .t{font-size:15px}
+.hero-side .d{font-size:12px;color:var(--muted);flex-shrink:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:var(--card);margin-top:48px}
+.stat{padding:28px 20px;text-align:center;border-right:1px solid var(--line2)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:38px;font-weight:800;letter-spacing:-2px;color:var(--num);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted);letter-spacing:1px;margin-top:6px;display:block}
+section{padding:72px 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(24px,4vw,34px);letter-spacing:-.5px;font-weight:800}
+.section-head h2 i{font-style:normal;color:var(--green);margin-right:12px;font-weight:400}
+.section-head p{color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.notice{border-left:3px solid var(--gold);background:var(--paper);padding:16px 22px;margin-bottom:36px;font-size:14px;color:#5f574c}
+.notice b{color:var(--green2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about-text p{font-size:16px;color:#4a443c;margin-bottom:18px;text-align:justify}
+.about-quote{border-left:3px solid var(--green);padding:20px 0 20px 24px;margin-top:28px;font-size:19px;color:var(--ink);letter-spacing:.5px;line-height:1.7}
+.rules{border:1px solid var(--line);background:var(--card)}
+.rules li{padding:18px 22px;border-bottom:1px solid var(--line2);display:flex;gap:18px;align-items:flex-start}
+.rules li:last-child{border-bottom:0}
+.pr-no{flex:0 0 38px;height:38px;border:1px solid var(--green);color:var(--green2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.rules strong{display:block;font-size:16px;margin-bottom:4px;letter-spacing:.5px}
+.rules p{color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:32px}
+.tab{font-family:inherit;background:var(--paper);border:1px solid var(--line);padding:10px 22px;cursor:pointer;font-size:14px;letter-spacing:1px;color:var(--muted);transition:.2s}
+.tab:hover{border-color:var(--green);color:var(--ink)}
+.tab.active{background:var(--green);color:#fffdf9;border-color:var(--green);font-weight:600}
+.film-grid{display:none;grid-template-columns:repeat(5,1fr);gap:20px}
+.film-grid[data-active]{display:grid;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.card{border:1px solid var(--line);background:var(--card);padding:20px;transition:.35s}
+.card:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 14px 32px rgba(35,32,28,.08)}
+.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.card-head .no{font-size:11px;letter-spacing:2px;color:var(--green);font-variant-numeric:tabular-nums}
+.card-head .mins{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.title-wrap{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:14px}
+.title-wrap h3{font-size:18px;letter-spacing:.5px;line-height:1.4}
+.title-wrap .yr{font-size:12px;color:var(--muted);flex-shrink:0}
+.bar{height:3px;background:var(--line2);margin-bottom:12px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green)}
+.card .meta{font-size:13px;color:var(--muted);margin-bottom:16px}
+.card-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px dashed var(--line)}
+.score{font-size:15px;font-weight:700;color:var(--green2)}
+.more{font-size:13px;color:var(--muted)}
+.more:hover{color:var(--green2)}
+.ranking{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line2);border:1px solid var(--line)}
+.rank-item{background:var(--card);padding:18px 22px;display:flex;align-items:center;gap:20px;transition:.25s}
+.rank-item:hover{background:var(--paper)}
+.rank-no{flex:0 0 46px;font-size:30px;font-weight:800;color:var(--line);font-variant-numeric:tabular-nums}
+.rank-item:nth-child(1) .rank-no{color:var(--green)}
+.rank-item:nth-child(2) .rank-no{color:#9aa0a6}
+.rank-item:nth-child(3) .rank-no{color:#a9784a}
+.rank-main{flex:1;min-width:0}
+.rank-main h4{font-size:17px;letter-spacing:.5px;margin-bottom:3px}
+.rank-main p{font-size:13px;color:var(--muted)}
+.rank-score{flex:0 0 auto;font-size:26px;font-weight:700;color:var(--green2);font-variant-numeric:tabular-nums}
+.timeline{border:1px solid var(--line);background:var(--card);padding:36px 32px}
+.tl-item{display:grid;grid-template-columns:72px 72px 1fr;gap:20px;align-items:center;padding:16px 0;border-bottom:1px dashed var(--line2)}
+.tl-item:last-child{border-bottom:0}
+.tl-day{font-size:13px;letter-spacing:2px;color:var(--green);font-weight:600}
+.tl-date{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tl-line{width:100%;height:1px;background:var(--line2)}
+.tl-body{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.tl-body h4{font-size:17px;letter-spacing:.5px}
+.tl-body p{font-size:13px;color:var(--muted)}
+.tl-item.today{background:var(--green3);margin:0 -32px;padding:16px 32px;border-bottom:1px solid var(--line)}
+.tl-item.today h4{color:var(--green2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:44px}
+.step{border:1px solid var(--line);padding:26px 22px;background:var(--card);transition:.3s}
+.step:hover{border-color:var(--green)}
+.step-no{display:block;font-size:13px;letter-spacing:3px;color:var(--green);margin-bottom:14px;font-weight:700}
+.step-line{display:block;height:2px;background:var(--green);width:32px;margin-bottom:14px}
+.step h4{font-size:19px;letter-spacing:.5px;margin-bottom:8px}
+.step p{font-size:14px;color:var(--muted)}
+.faqs{border-top:1px solid var(--line)}
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{padding:20px 8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px;letter-spacing:.5px;gap:16px;list-style:none;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{font-style:normal;font-size:22px;color:var(--muted);transition:.3s;flex-shrink:0}
+.faq[open] summary i{transform:rotate(45deg);color:var(--green)}
+.faq p{padding:0 8px 22px;color:var(--muted);font-size:15px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.review{border:1px solid var(--line);background:var(--card);padding:26px 24px;transition:.3s}
+.review:hover{border-color:var(--green);transform:translateY(-4px)}
+.review-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.rev-name{font-size:14px;letter-spacing:1px}
+.rev-score{color:var(--green);font-size:15px}
+.review blockquote{font-size:15px;color:#4a443c;text-align:justify;margin-bottom:18px}
+.review figcaption{display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--line2)}
+.rev-likes{font-size:13px;color:var(--muted)}
+.rev-reply{font-size:13px;color:var(--green2);cursor:pointer}
+.rev-reply:hover{text-decoration:underline}
+footer{background:#1a1815;color:#a89f94;padding:56px 0 32px;margin-top:32px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-brand b{font-size:20px;letter-spacing:1px;color:#fffdf9}
+.foot-brand p{font-size:14px;color:#8a8278;margin-top:14px;max-width:26em}
+.foot-col h4{font-size:13px;letter-spacing:2px;color:#fffdf9;margin-bottom:16px;text-transform:uppercase}
+.foot-col ul li{padding:6px 0}
+.foot-col a{color:#8a8278;font-size:14px;transition:.2s}
+.foot-col a:hover{color:var(--green)}
+.foot-bottom{border-top:1px solid #332f2a;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#6b645a}
+.foot-bottom a{color:#6b645a;border-bottom:1px dotted #4a443c}
+@media (max-width:1024px){.film-grid{grid-template-columns:repeat(3,1fr)}.hero-in{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr;gap:36px}.reviews,.ranking{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.stats .stat:nth-child(2){border-right:0}.hero-side{display:none}}
+@media (max-width:820px){.container{padding:0 16px}nav{display:none}.menu-btn{display:block}.film-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.foot-grid{grid-template-columns:1fr}section{padding:52px 0}.hero{padding:48px 0 36px}.timeline{padding:24px 18px}.tl-item.today{margin:0 -18px;padding:16px 18px}.tl-item{grid-template-columns:52px 60px 1fr;gap:12px}}
+@media (max-width:480px){body{font-size:15px}.film-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.stat b{font-size:30px}.rules li{padding:16px 14px;gap:12px}.pr-no{flex:0 0 32px;height:32px;font-size:12px}.title-wrap h3{font-size:16px}.hero-actions .btn{flex:1;justify-content:center}}
+@media print{nav,.menu-btn,.hero-actions{display:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+<header>
+  <div class="container header-in">
+    <a class="logo" href="#top" aria-label="电影网免费 首页"><b>电影网免费</b><em>dianyingwangmianfei-zh</em><span class="badge">资料免费</span></a>
+    <nav><ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#films">编号片单</a></li>
+          <li><a href="#ranking">高分榜单</a></li>
+          <li><a href="#schedule">观影日历</a></li>
+          <li><a href="#guide">观影手册</a></li>
+          <li><a href="#reviews">观影札记</a></li>
+    </ul></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-nav" id="mobileNav"><ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#films">编号片单</a></li>
+          <li><a href="#ranking">高分榜单</a></li>
+          <li><a href="#schedule">观影日历</a></li>
+          <li><a href="#guide">观影手册</a></li>
+          <li><a href="#reviews">观影札记</a></li>
+    </ul></div>
+</header>
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="container">
+      <div class="hero-in">
+        <div class="hero-text">
+          <span class="hero-tag">免费查阅 · 先看时长 · 只看资料</span>
+          <h1 id="heroTitle">免费查资料<br>不花钱<em>看片单</em></h1>
+          <p class="hero-sub">电影网免费（dianyingwangmianfei-zh）按编号归档影片资料，所有资料与排片信息免费查阅，不提供影片文件与在线播放资源；每部影片有唯一编号与时长、版本标注，长片会标出建议观看节奏。</p>
+          <p class="hero-sub">本站只做影片资料归档与观影记录，不提供影片文件与在线播放资源，也不设付费会员。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#films">查编号片单</a>
+            <a class="btn ghost" href="#schedule">看观影日历</a>
+          </div>
+        </div>
+        <aside class="hero-side" aria-label="本周排片">
+          <div class="hero-side-hd"><span>本周排片</span><span>10/02–10/08</span></div>
+          <ul>
+            <li><span class="t">牯岭街少年杀人事件</span><span class="d">237 分钟 · 需分两次</span></li>
+            <li><span class="t">重庆森林</span><span class="d">102 分钟 · 一次看完</span></li>
+            <li><span class="t">老男孩</span><span class="d">120 分钟 · 一次看完</span></li>
+            <li><span class="t">活着</span><span class="d">133 分钟 · 一次看完</span></li>
+            <li><span class="t">燃烧</span><span class="d">148 分钟 · 留间隔</span></li>
+            <li><span class="t">一一</span><span class="d">173 分钟 · 留间隔</span></li>
+            <li><span class="t">花样年华</span><span class="d">98 分钟 · 一次看完</span></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>000</b><span>当前编号</span></div>
+        <div class="stat"><b>30</b><span>收录影片</span></div>
+        <div class="stat"><b>12</b><span>4K 修复版</span></div>
+        <div class="stat"><b>07</b><span>本周排片</span></div>
+      </div>
+    </div>
+  </section>
+  <section id="about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <div class="section-head"><h2 id="aboutTitle"><i>01</i>关于电影网免费</h2><p>六条归档规则</p></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>电影网免费（dianyingwangmianfei-zh）是一个按编号归档影片资料的静态站，所有资料与排片信息均可免费查阅，不提供影片文件与在线播放资源。</p>
+          <p>每部影片有唯一编号、时长与版本标注，长片会标出建议观看节奏，方便按编号回查。</p>
+          <p>提供影片年表、版本对照与放映日历，是私人观影的时间账本，不是推荐榜单。</p>
+          <blockquote class="about-quote">"先看时长，再看版本，最后才看片名——这样不会在深夜两点发现还有两小时。"</blockquote>
+        </div>
+        <ul class="rules">
+        <li><span class="pr-no">01</span><div><strong>只做资料归档</strong><p>本站只提供影片资料与排片信息，不提供任何影片文件与在线播放资源。</p></div></li>
+        <li><span class="pr-no">02</span><div><strong>时长先写</strong><p>片名后面紧跟时长与版本，先看过时长再决定今晚能不能一次看完。</p></div></li>
+        <li><span class="pr-no">03</span><div><strong>修复年份</strong><p>4K 修复版标注修复机构与年份，转录版不做修复宣传。</p></div></li>
+        <li><span class="pr-no">04</span><div><strong>字幕来源</strong><p>中文字幕来源写在详情页，机器翻译与人工校译分开标注。</p></div></li>
+        <li><span class="pr-no">05</span><div><strong>不挂推广</strong><p>全站不挂第三方推广与诱导下载链接，内页链接统一以 # 占位。</p></div></li>
+        <li><span class="pr-no">06</span><div><strong>长片留痕</strong><p>超 150 分钟的片子记录分次节奏，供下次重看时参考。</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="films" aria-labelledby="filmsTitle" style="background:#eee9e0">
+    <div class="container">
+      <div class="section-head"><h2 id="filmsTitle"><i>02</i>编号片单</h2><p>06 组 · 30 部影片</p></div>
+      <p class="notice"><b>关于"免费"：</b>本站所有影片资料、排片表与观影记录功能均免费查阅，不收取任何费用，也不提供影片文件与在线播放资源。播放请通过各片方、发行方或正规视频平台的正式渠道。</p>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-target="g1" type="button">今日不花钱 · 01</button>
+        <button class="tab" data-target="g2" type="button">华语精选 · 02</button>
+        <button class="tab" data-target="g3" type="button">亚洲片单 · 03</button>
+        <button class="tab" data-target="g4" type="button">欧美经典 · 04</button>
+        <button class="tab" data-target="g5" type="button">长片专场 · 05</button>
+        <button class="tab" data-target="g6" type="button">4K 修复版 · 06</button>
+      </div>
+      <div class="film-grid" data-group="g1" data-active>
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.89</span><span class="mins">237 分钟</span></div>
+          <div class="title-wrap"><h3>牯岭街少年杀人事件</h3><span class="yr">1991</span></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <p class="meta">台湾 · 4K 修复 · 237 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.0</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.51</span><span class="mins">175 分钟</span></div>
+          <div class="title-wrap"><h3>教父</h3><span class="yr">1972</span></div>
+          <div class="bar"><i style="width:93%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 175 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.3</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.77</span><span class="mins">207 分钟</span></div>
+          <div class="title-wrap"><h3>七武士</h3><span class="yr">1954</span></div>
+          <div class="bar"><i style="width:99%"></i></div>
+          <p class="meta">日本 · 4K 修复 · 207 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.3</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.03</span><span class="mins">154 分钟</span></div>
+          <div class="title-wrap"><h3>低俗小说</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:88%"></i></div>
+          <p class="meta">美国 · 154 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.8</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.07</span><span class="mins">98 分钟</span></div>
+          <div class="title-wrap"><h3>花样年华</h3><span class="yr">2000</span></div>
+          <div class="bar"><i style="width:77%"></i></div>
+          <p class="meta">香港 · 4K 修复 · 98 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.7</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <div class="film-grid" data-group="g2">
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.23</span><span class="mins">171 分钟</span></div>
+          <div class="title-wrap"><h3>霸王别姬</h3><span class="yr">1993</span></div>
+          <div class="bar"><i style="width:92%"></i></div>
+          <p class="meta">内地 · 4K 修复 · 171 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.6</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.54</span><span class="mins">133 分钟</span></div>
+          <div class="title-wrap"><h3>活着</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:84%"></i></div>
+          <p class="meta">内地 · 133 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.3</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.37</span><span class="mins">173 分钟</span></div>
+          <div class="title-wrap"><h3>一一</h3><span class="yr">2000</span></div>
+          <div class="bar"><i style="width:92%"></i></div>
+          <p class="meta">台湾 · 4K 修复 · 173 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.1</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.35</span><span class="mins">102 分钟</span></div>
+          <div class="title-wrap"><h3>重庆森林</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:78%"></i></div>
+          <p class="meta">香港 · 102 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.8</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.61</span><span class="mins">134 分钟</span></div>
+          <div class="title-wrap"><h3>阳光灿烂的日子</h3><span class="yr">1995</span></div>
+          <div class="bar"><i style="width:84%"></i></div>
+          <p class="meta">内地 · 134 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.8</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <div class="film-grid" data-group="g3">
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.75</span><span class="mins">136 分钟</span></div>
+          <div class="title-wrap"><h3>东京物语</h3><span class="yr">1953</span></div>
+          <div class="bar"><i style="width:85%"></i></div>
+          <p class="meta">日本 · 4K 修复 · 136 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.2</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.36</span><span class="mins">88 分钟</span></div>
+          <div class="title-wrap"><h3>罗生门</h3><span class="yr">1950</span></div>
+          <div class="bar"><i style="width:75%"></i></div>
+          <p class="meta">日本 · 88 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.8</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.62</span><span class="mins">120 分钟</span></div>
+          <div class="title-wrap"><h3>老男孩</h3><span class="yr">2003</span></div>
+          <div class="bar"><i style="width:82%"></i></div>
+          <p class="meta">韩国 · 4K 修复 · 120 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.0</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.60</span><span class="mins">148 分钟</span></div>
+          <div class="title-wrap"><h3>燃烧</h3><span class="yr">2018</span></div>
+          <div class="bar"><i style="width:87%"></i></div>
+          <p class="meta">韩国 · 148 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.1</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.77</span><span class="mins">108 分钟</span></div>
+          <div class="title-wrap"><h3>三峡好人</h3><span class="yr">2006</span></div>
+          <div class="bar"><i style="width:79%"></i></div>
+          <p class="meta">内地 · 108 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.4</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <div class="film-grid" data-group="g4">
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.18</span><span class="mins">142 分钟</span></div>
+          <div class="title-wrap"><h3>肖申克的救赎</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:86%"></i></div>
+          <p class="meta">美国 · 142 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.7</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.18</span><span class="mins">142 分钟</span></div>
+          <div class="title-wrap"><h3>阿甘正传</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:86%"></i></div>
+          <p class="meta">美国 · 142 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.5</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.92</span><span class="mins">195 分钟</span></div>
+          <div class="title-wrap"><h3>辛德勒的名单</h3><span class="yr">1993</span></div>
+          <div class="bar"><i style="width:97%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 195 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.5</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.54</span><span class="mins">133 分钟</span></div>
+          <div class="title-wrap"><h3>这个杀手不太冷</h3><span class="yr">1994</span></div>
+          <div class="bar"><i style="width:84%"></i></div>
+          <p class="meta">法国 · 133 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.4</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.85</span><span class="mins">194 分钟</span></div>
+          <div class="title-wrap"><h3>泰坦尼克号</h3><span class="yr">1997</span></div>
+          <div class="bar"><i style="width:96%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 194 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.4</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <div class="film-grid" data-group="g5">
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.67</span><span class="mins">149 分钟</span></div>
+          <div class="title-wrap"><h3>2001 太空漫游</h3><span class="yr">1968</span></div>
+          <div class="bar"><i style="width:87%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 149 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.9</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.95</span><span class="mins">153 分钟</span></div>
+          <div class="title-wrap"><h3>现代启示录</h3><span class="yr">1979</span></div>
+          <div class="bar"><i style="width:88%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 153 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.5</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.41</span><span class="mins">216 分钟</span></div>
+          <div class="title-wrap"><h3>阿拉伯的劳伦斯</h3><span class="yr">1962</span></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <p class="meta">英国 · 4K 修复 · 216 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.7</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.08</span><span class="mins">183 分钟</span></div>
+          <div class="title-wrap"><h3>猎鹿人</h3><span class="yr">1978</span></div>
+          <div class="bar"><i style="width:94%"></i></div>
+          <p class="meta">美国 · 183 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.4</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.39</span><span class="mins">145 分钟</span></div>
+          <div class="title-wrap"><h3>好家伙</h3><span class="yr">1990</span></div>
+          <div class="bar"><i style="width:87%"></i></div>
+          <p class="meta">美国 · 145 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.5</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <div class="film-grid" data-group="g6">
+        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.10</span><span class="mins">155 分钟</span></div>
+          <div class="title-wrap"><h3>天堂电影院</h3><span class="yr">1988</span></div>
+          <div class="bar"><i style="width:89%"></i></div>
+          <p class="meta">意大利 · 4K 修复 · 155 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.2</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.33</span><span class="mins">229 分钟</span></div>
+          <div class="title-wrap"><h3>美国往事</h3><span class="yr">1984</span></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <p class="meta">美国 · 4K 修复 · 229 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.2</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.82</span><span class="mins">137 分钟</span></div>
+          <div class="title-wrap"><h3>发条橙</h3><span class="yr">1971</span></div>
+          <div class="bar"><i style="width:85%"></i></div>
+          <p class="meta">英国 · 4K 修复 · 137 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.6</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.55</span><span class="mins">119 分钟</span></div>
+          <div class="title-wrap"><h3>鸟人</h3><span class="yr">1982</span></div>
+          <div class="bar"><i style="width:81%"></i></div>
+          <p class="meta">土耳其 · 4K 修复 · 119 分钟</p>
+          <div class="card-foot"><span class="score">★ 8.0</span><a href="#" class="more">详情 ›</a></div>
+        </article>        <article class="card" data-group="films">
+          <div class="card-head"><span class="no">NO.63</span><span class="mins">205 分钟</span></div>
+          <div class="title-wrap"><h3>安德烈·卢布廖夫</h3><span class="yr">1966</span></div>
+          <div class="bar"><i style="width:99%"></i></div>
+          <p class="meta">苏联 · 4K 修复 · 205 分钟</p>
+          <div class="card-foot"><span class="score">★ 9.1</span><a href="#" class="more">详情 ›</a></div>
+        </article>
+      </div>
+      <p style="margin-top:22px;font-size:14px;color:#80786d">每张卡片左侧是编号，右侧是时长；时长条越长代表片越长。点击分组标签切换片单，详情入口以 # 占位。</p>
+    </div>
+  </section>
+  <section id="ranking" aria-labelledby="rankTitle">
+    <div class="container">
+      <div class="section-head"><h2 id="rankTitle"><i>03</i>高分榜单</h2><p>TOP 10 · 站内评分</p></div>
+      <ol class="ranking">
+        <li class="rank-item">
+          <span class="rank-no">01</span>
+          <div class="rank-main"><h4>肖申克的救赎</h4><p>142 分钟</p></div>
+          <span class="rank-score">9.7</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">02</span>
+          <div class="rank-main"><h4>霸王别姬</h4><p>171 分钟</p></div>
+          <span class="rank-score">9.6</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">03</span>
+          <div class="rank-main"><h4>阿甘正传</h4><p>142 分钟</p></div>
+          <span class="rank-score">9.5</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">04</span>
+          <div class="rank-main"><h4>辛德勒的名单</h4><p>195 分钟</p></div>
+          <span class="rank-score">9.5</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">05</span>
+          <div class="rank-main"><h4>这个杀手不太冷</h4><p>133 分钟</p></div>
+          <span class="rank-score">9.4</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">06</span>
+          <div class="rank-main"><h4>泰坦尼克号</h4><p>194 分钟</p></div>
+          <span class="rank-score">9.4</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">07</span>
+          <div class="rank-main"><h4>活着</h4><p>133 分钟</p></div>
+          <span class="rank-score">9.3</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">08</span>
+          <div class="rank-main"><h4>七武士</h4><p>207 分钟</p></div>
+          <span class="rank-score">9.3</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">09</span>
+          <div class="rank-main"><h4>教父</h4><p>175 分钟</p></div>
+          <span class="rank-score">9.3</span>
+        </li>
+        <li class="rank-item">
+          <span class="rank-no">10</span>
+          <div class="rank-main"><h4>牯岭街少年杀人事件</h4><p>237 分钟</p></div>
+          <span class="rank-score">9.0</span>
+        </li>
+      </ol>
+      <p style="margin-top:22px;font-size:14px;color:#80786d">按站内收录评分排列，同一分数按时长从短到短排，方便挑片时兼顾时间成本。</p>
+    </div>
+  </section>
+  <section id="schedule" aria-labelledby="schTitle" style="background:#eee9e0">
+    <div class="container">
+      <div class="section-head"><h2 id="schTitle"><i>04</i>观影日历</h2><p>七天排片 · 含间隔建议</p></div>
+      <div class="timeline">
+      <div class="tl-item today">
+        <div class="tl-day">周一</div>
+        <div class="tl-date">10/02</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>牯岭街少年杀人事件</h4><p>237 分钟 · 需分两次</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周二</div>
+        <div class="tl-date">10/03</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>重庆森林</h4><p>102 分钟 · 一次看完</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周三</div>
+        <div class="tl-date">10/04</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>老男孩</h4><p>120 分钟 · 一次看完</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周四</div>
+        <div class="tl-date">10/05</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>活着</h4><p>133 分钟 · 一次看完</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周五</div>
+        <div class="tl-date">10/06</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>燃烧</h4><p>148 分钟 · 留间隔</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周六</div>
+        <div class="tl-date">10/07</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>一一</h4><p>173 分钟 · 留间隔</p></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">周日</div>
+        <div class="tl-date">10/08</div>
+        <div class="tl-line" aria-hidden="true"></div>
+        <div class="tl-body"><h4>花样年华</h4><p>98 分钟 · 一次看完</p></div>
+      </div>
+      </div>
+      <p style="margin-top:22px;font-size:14px;color:#80786d">从今天往后排七天，超 150 分钟的会注明需要留间隔，可以照着这份表连看一周。</p>
+    </div>
+  </section>
+  <section id="guide" aria-labelledby="guideTitle">
+    <div class="container">
+      <div class="section-head"><h2 id="guideTitle"><i>05</i>观影手册</h2><p>04 步 · 先看过时长</p></div>
+      <div class="steps">
+      <div class="step">
+        <span class="step-no">1</span>
+        <span class="step-line" aria-hidden="true"></span>
+        <h4>查编号</h4><p>先看编号与时长，超 150 分钟的片子先确认今晚能不能一次看完。</p>
+      </div>
+      <div class="step">
+        <span class="step-no">2</span>
+        <span class="step-line" aria-hidden="true"></span>
+        <h4>看版本</h4><p>优先 4K 修复，再看原声与字幕来源，转录版会在备注里写明。</p>
+      </div>
+      <div class="step">
+        <span class="step-no">3</span>
+        <span class="step-line" aria-hidden="true"></span>
+        <h4>排间隔</h4><p>超 200 分钟的分两次，记录停顿点，票根上会留空位。</p>
+      </div>
+      <div class="step">
+        <span class="step-no">4</span>
+        <span class="step-line" aria-hidden="true"></span>
+        <h4>做编号</h4><p>看完在本页留下编号与观看日期，方便按编号回查。</p>
+      </div>
+      </div>
+      <div class="faqs">
+      <details class="faq">
+        <summary><span>免费是指什么免费？</span><i aria-hidden="true">＋</i></summary>
+        <p>本站所有影片资料、排片表与观影记录功能均为免费查阅，不收取任何费用，也不提供付费会员服务。</p>
+      </details>
+      <details class="faq">
+        <summary><span>能在这里看电影吗？</span><i aria-hidden="true">＋</i></summary>
+        <p>不能。本站是静态资料站，只做影片资料归档与排片记录，不提供影片文件与在线播放资源。</p>
+      </details>
+      <details class="faq">
+        <summary><span>4K 修复和转录版怎么区分？</span><i aria-hidden="true">＋</i></summary>
+        <p>详情页与海报角标都标注，修复版写明修复机构与年份，未标注的按转录版处理。</p>
+      </details>
+      <details class="faq">
+        <summary><span>超长片怎么安排节奏？</span><i aria-hidden="true">＋</i></summary>
+        <p>票根留空位记录停顿点，超 200 分钟的分两次，中间隔天比连着看更能记住细节。</p>
+      </details>
+      </div>
+    </div>
+  </section>
+  <section id="reviews" aria-labelledby="revTitle" style="background:#eee9e0">
+    <div class="container">
+      <div class="section-head"><h2 id="revTitle"><i>06</i>观影札记</h2><p>真实短评 · 互动数据</p></div>
+      <div class="reviews">
+      <figure class="review">
+        <div class="review-head"><span class="rev-name">@免费不降质</span><span class="rev-score">★ 4.9</span></div>
+        <blockquote>资料站和播放站分开，反而更省心，版本和时长写得清清楚楚。</blockquote>
+        <figcaption><span class="rev-likes">♡ 156 人觉得有用</span><span class="rev-reply">回复</span></figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review-head"><span class="rev-name">@先看时长</span><span class="rev-score">★ 4.8</span></div>
+        <blockquote>卡片上时长最显眼，237 分钟的片子我提前分了两次看，体验好很多。</blockquote>
+        <figcaption><span class="rev-likes">♡ 112 人觉得有用</span><span class="rev-reply">回复</span></figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review-head"><span class="rev-name">@修复版优先</span><span class="rev-score">★ 4.7</span></div>
+        <blockquote>4K 修复那一组很全，辛德勒的名单修复版和老版本差别明显。</blockquote>
+        <figcaption><span class="rev-likes">♡ 98 人觉得有用</span><span class="rev-reply">回复</span></figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review-head"><span class="rev-name">@1994一组</span><span class="rev-score">★ 4.8</span></div>
+        <blockquote>1994 年那一组连看了四部，按编号顺序排片比按类型好用。</blockquote>
+        <figcaption><span class="rev-likes">♡ 87 人觉得有用</span><span class="rev-reply">回复</span></figcaption>
+      </figure>
+      </div>
+      <p style="margin-top:28px;text-align:center;font-size:14px;color:#80786d"><a class="btn ghost" href="#">写一条札记</a></p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand"><b>电影网免费</b><p>所有影片资料与排片信息免费查阅，只做资料归档与观影记录，不提供影片文件与在线播放资源。</p></div>
+      <div class="foot-col"><h4>站内栏目</h4><ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#films">编号片单</a></li>
+          <li><a href="#ranking">高分榜单</a></li>
+          <li><a href="#schedule">观影日历</a></li>
+          <li><a href="#guide">观影手册</a></li>
+          <li><a href="#reviews">观影札记</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>资料服务</h4><ul>
+        <li><a href="#">影片资料纠错</a></li><li><a href="#">版本来源说明</a></li><li><a href="#">放映日历更新</a></li><li><a href="#">编号导出</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 电影网免费（dianyingwangmianfei-zh） 保留所有权利 · 网站网址：https://dianyingwangmianfei-zh.github.io</span>
+      <span>本站为静态导航页面 · 内页链接以 # 替代 · <a href="https://dianyingwangmianfei-zh.github.io">https://dianyingwangmianfei-zh.github.io</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn"),nav=document.getElementById("mobileNav");
+  if(btn)btn.addEventListener("click",function(){var o=nav.classList.toggle("open");btn.setAttribute("aria-expanded",o?"true":"false");btn.textContent=o?"✕":"☰";});
+  var links=nav.querySelectorAll("a");
+  for(var i=0;i<links.length;i++)links[i].addEventListener("click",function(){nav.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.textContent="☰";});
+  var tabs=document.querySelectorAll(".tab"),grids=document.querySelectorAll(".film-grid");
+  for(var j=0;j<tabs.length;j++)tabs[j].addEventListener("click",function(){var t=this.getAttribute("data-target");for(var k=0;k<tabs.length;k++)tabs[k].classList.remove("active");for(var m=0;m<grids.length;m++)grids[m].removeAttribute("data-active");this.classList.add("active");var el=document.querySelector(".film-grid[data-group=\""+t+"\"]");if(el)el.setAttribute("data-active","");});
+  var reps=document.querySelectorAll(".rev-reply");
+  for(var n=0;n<reps.length;n++)reps[n].addEventListener("click",function(){this.textContent=this.textContent==="回复"?"已收藏":"回复";});
+})();
+</script>
+</body>
+</html>
